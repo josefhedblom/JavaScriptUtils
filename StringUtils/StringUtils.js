@@ -18,5 +18,6 @@ String.prototype.print = function (num) {
   let counter = 1;
   while(counter <= num) {
     console.log(`${this}`);
-    counter++; 
+    counter++;
+  };
 };
