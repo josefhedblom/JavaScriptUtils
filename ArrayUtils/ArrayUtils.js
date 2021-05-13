@@ -43,3 +43,19 @@ Array.prototype.shuffle = function() {
 	this.sort(function(a, b){return 0.5 - Math.random()});
 	return this
 };
+
+/* 
+	const persons = [
+    'Steve',
+    'Woz',
+    'John',
+    'Chris',
+    'Apple'
+]
+persons.sortAlphabeticall();
+[ 'Apple', 'Chris', 'John', 'Steve', 'Woz' ]
+*/
+
+Array.prototype.sortAlphabeticall = function(){
+    return this.sort((a, b) =>  a.localeCompare(b))
+};
